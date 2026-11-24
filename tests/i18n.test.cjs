@@ -128,23 +128,36 @@ test('every original question, lesson, week and official source has complete Eng
   assert.ok(checked >= 2851, `${checked} source strings checked`);
 });
 
-test('language preference persists, updates document language and emits only valid changes', () => {
+test('content and interface language are separate settings that persist and emit only valid changes', () => {
   const { I, document, stored, events } = load();
   assert.equal(I.mode, 'bi');
+  assert.equal(I.ui, 'zh');
   I.setMode('en');
   assert.equal(I.getMode(), 'en');
   assert.equal(stored.get('pmp-language'), 'en');
-  assert.equal(document.documentElement.lang, 'en');
   assert.equal(document.documentElement.dataset.language, 'en');
-  assert.match(document.title, /Ascend/);
+  assert.equal(document.documentElement.lang, 'zh-CN', 'content language must not change the interface language');
   assert.equal(events.at(-1), 'pmp-language-change');
   I.setMode('invalid');
   assert.equal(events.length, 1);
   assert.equal(I.mode, 'en');
-  I.setMode('zh');
+  I.setUi('en');
+  assert.equal(stored.get('pmp-ui'), 'en');
+  assert.equal(document.documentElement.lang, 'en');
+  assert.equal(document.documentElement.dataset.ui, 'en');
+  assert.match(document.title, /Ascend/);
+  I.setUi('fr');
+  assert.equal(I.ui, 'en');
+  I.setUi('zh');
   assert.equal(document.documentElement.lang, 'zh-CN');
-  assert.equal(load('en').I.mode, 'en');
+  assert.equal(I.t('提交答案'), '提交答案');
+  // A saved choice from the old single switch carries over: English stays English throughout.
+  const legacy = load('en').I;
+  assert.equal(legacy.mode, 'en');
+  assert.equal(legacy.ui, 'en');
+  assert.equal(legacy.t('提交答案'), 'Check answer');
   assert.equal(load('unknown').I.mode, 'bi');
+  assert.equal(load('bi').I.ui, 'zh');
 });
 
 test('dynamic question, progress and date phrases translate without losing values', () => {
@@ -159,36 +172,52 @@ test('dynamic question, progress and date phrases translate without losing value
   assert.equal(I.english('✓ 判断正确 · 正确选项 A'), '✓ Correct decision · Correct option A');
 });
 
-test('renderer handles Chinese, English and bilingual text, accessibility labels and user notes', () => {
+test('renderer translates study content by content language and controls by interface language', () => {
   for (const mode of ['zh', 'en', 'bi']) {
-    const { I, document, context: c } = load(mode);
-    const q = c.PMP_QUESTIONS_A[0];
-    const root = document.body;
-    const stem = new Element('h2'); stem.textContent = q.stem;
-    const control = new Element('button'); control.textContent = '提交答案'; control.setAttribute('aria-label', '提交答案');
-    const notes = new Element('textarea'); notes.textContent = '我的个人笔记，不应被翻译。';
-    const user = new Element('span'); user.setAttribute('data-i18n-skip', ''); user.textContent = '学习计划';
-    root.append(stem, control, notes, user);
-    I.apply(root);
-    assert.equal(notes.textContent, '我的个人笔记，不应被翻译。');
-    assert.equal(user.textContent, '学习计划');
-    if (mode === 'zh') {
-      assert.equal(stem.textContent, q.stem);
-      assert.equal(control.getAttribute('aria-label'), '提交答案');
-    } else if (mode === 'en') {
-      assert.equal(stem.textContent, I.english(q.stem));
-      assert.equal(control.textContent, 'Check answer');
-      assert.equal(control.getAttribute('aria-label'), 'Check answer');
-    } else {
-      assert.equal(stem.querySelectorAll('.i18n-zh')[0].textContent, q.stem);
-      const english = stem.querySelectorAll('.i18n-en')[0];
-      assert.equal(english.textContent, I.english(q.stem));
-      assert.equal(english.lang, 'en');
-      assert.equal(control.getAttribute('aria-label'), '提交答案 / Check answer');
+    for (const ui of ['zh', 'en']) {
+      const { I, document, context: c } = load(mode);
+      I.setUi(ui);
+      const q = c.PMP_QUESTIONS_A[0];
+      const root = document.body;
+      const stem = new Element('h2'); stem.setAttribute('data-zone', 'content'); stem.textContent = q.stem;
+      const control = new Element('button'); control.textContent = '提交答案'; control.setAttribute('aria-label', '提交答案');
+      const notes = new Element('textarea'); notes.textContent = '我的个人笔记，不应被翻译。';
+      const user = new Element('span'); user.setAttribute('data-i18n-skip', ''); user.textContent = '学习计划';
+      // A control inside a content area opts back into the interface language.
+      const inner = new Element('button'); inner.setAttribute('data-zone', 'ui'); inner.textContent = '收藏题目';
+      const detail = new Element('div'); detail.setAttribute('data-zone', 'content'); detail.append(inner);
+      root.append(stem, control, notes, user, detail);
       I.apply(root);
-      assert.equal(stem.querySelectorAll('.i18n-pair').length, 1, 'repeated rendering must not nest translations');
+      const label = `content ${mode}, interface ${ui}`;
+      assert.equal(notes.textContent, '我的个人笔记，不应被翻译。', label);
+      assert.equal(user.textContent, '学习计划', label);
+      assert.equal(control.textContent, ui === 'en' ? 'Check answer' : '提交答案', label);
+      assert.equal(control.getAttribute('aria-label'), ui === 'en' ? 'Check answer' : '提交答案', label);
+      assert.equal(inner.textContent, ui === 'en' ? I.english('收藏题目') : '收藏题目', label);
+      if (mode === 'zh') assert.equal(stem.textContent, q.stem, label);
+      else if (mode === 'en') assert.equal(stem.textContent, I.english(q.stem), label);
+      else {
+        const pair = stem.querySelectorAll('.i18n-pair')[0];
+        assert.deepEqual(pair.children.map(n => n.className), ['i18n-en', 'i18n-zh'], 'English comes first, as on the exam');
+        assert.equal(stem.querySelectorAll('.i18n-zh')[0].textContent, q.stem);
+        const english = stem.querySelectorAll('.i18n-en')[0];
+        assert.equal(english.textContent, I.english(q.stem));
+        assert.equal(english.lang, 'en');
+        I.apply(root);
+        assert.equal(stem.querySelectorAll('.i18n-pair').length, 1, 'repeated rendering must not nest translations');
+      }
     }
   }
+});
+
+test('interface text added with the redesign and course tracking has English', () => {
+  const { I } = load();
+  for (const zh of ['今日', '章节', '提要', '今天做什么', '天连续', '只做 5 题', '练这一段', '听到这里了', '语言', '外观', '从今天重新排期', '截止日', '加进日历',
+    '3 / 11 道做过 · 首次正确率 67%', '比计划慢约 5 小时', '还有 75 天', '还有 6 道没做过', '本节练习 · Project Approaches', '今日最低量 · 5 题', '本站提要 · 20 分钟 · 人员']) {
+    assert.doesNotMatch(I.english(zh), han, zh);
+  }
+  assert.equal(I.english('比计划慢约 5 小时'), 'About 5 h behind plan');
+  assert.equal(I.english('本节练习 · Project Approaches'), 'Section practice · Project Approaches');
 });
 
 test('English searches find canonical lessons and questions without mutating their IDs or answers', () => {
