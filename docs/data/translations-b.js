@@ -834,42 +834,42 @@ const terms={"l13":[{"en":"Risk Owner","zh":"风险责任人"},{"en":"Contingenc
 for(const id of Object.keys(lessons))lessons[id].terms=terms[id];
 Object.assign(window.PMP_EN.lessons,lessons);
 Object.assign(window.PMP_EN.weeks,{
-7:{title:'Apply agile and hybrid approaches',focus:'Scrum accountabilities, flow measures, and cross-team interfaces.',tasks:[
-'Spend 2 hours studying the three lessons and diagramming the difference between the Review and Retrospective.',
-'Complete 4 hours of formal training; if already completed, study additional agile and hybrid cases.',
-'Spend 2 hours on 40 agile and hybrid questions, focusing on goals, quality, and boundaries of authority.',
-'Spend 1 hour explaining WIP, throughput, and cycle time; allow up to 1 additional hour for review.'
-],checkpoint:'Distinguish when to reorder the backlog, remove an impediment, or follow governance. Do not confuse agile with an absence of planning.'},
-8:{title:'Cover the updated Business Environment domain',focus:'Governance, organizational change, sustainability, and AI scenarios.',tasks:[
-'Spend 2.5 hours studying the four lessons and building a Business Environment knowledge map.',
-'Complete 4 hours of formal training, reaching a planned cumulative 31 hours this week; check documentation requirements.',
-'Spend 2 hours on 40 business scenarios, practicing trade-offs among value, compliance, and long-term impacts.',
-'Spend 1 hour reviewing recurring mistakes from the first seven weeks and keep 0.5 hour for remaining gaps.'
-],checkpoint:'Explain human oversight of AI, data protection, benefit ownership, and operational readiness; look beyond schedule and cost.'},
-9:{title:'Run the first systematic gap review',focus:'Move from chapter-based study to mixed scenario judgment.',tasks:[
-'Spend 1 hour studying scenario-question analysis and creating your own four-step reading process.',
-'Complete 60 timed questions in about 80 minutes, then spend 1.5 hours reviewing each one.',
-'Complete 4 hours of formal training to reach 35 cumulative hours and verify valid documentation; if already completed, study weak areas.',
-'Spend 1.5 hours revisiting your weakest domain and spaced-review mistakes. Avoid raising scores solely by repeating familiar questions.'
-],checkpoint:'Identify your three leading error types and specific improvements. A 60-question score on this site is a learning signal, not a prediction of passing.'},
-10:{title:'Improve consistency and reading pace',focus:'Test performance on unfamiliar questions and reduce recurring errors.',tasks:[
-'Complete another 60-question timed session in 80 minutes, prioritizing unseen questions.',
-'Spend 2.5 hours reviewing errors, writing down the mistaken concept, correct reasoning, and clues to recognize next time.',
-'Spend 2 hours using credible external practice or formal course materials to test knowledge transfer.',
-'Spend 1.5 hours reviewing weak lessons and formulas, and retain about 1 hour of buffer.'
-],checkpoint:'Aim for roughly 75% or above consistently across two unfamiliar-question sessions, with no domain substantially behind. This is a personal target, not PMI’s passing mark.'},
-11:{title:'Practice full-length endurance',focus:'Experience sustained answering and test pacing and attention.',tasks:[
-'Set aside a full 4 hours for 180 timed questions, with additional time for planned breaks. This site’s question types and sections do not reproduce the official exam.',
-'Spend 2 hours reviewing uncertain and incorrect answers, distinguishing knowledge gaps from fatigue-related mistakes.',
-'Spend 1 hour checking application, training documentation, identification, and exam-booking requirements.',
-'Allow 1–3 hours for targeted review. The site’s full-length practice overlaps with daily practice, so also use credible unseen questions to verify readiness.'
-],checkpoint:'Finish within the time limit with time left to review. If you repeatedly cannot finish or have substantial knowledge gaps, extend preparation by 2–4 weeks.'},
-12:{title:'Consolidate, allow buffer, and decide on readiness',focus:'Strengthen weak areas, reduce last-minute cramming, and choose an exam window based on readiness.',tasks:[
-'Spend 2 hours reviewing the most important error patterns, knowledge maps, and common formulas.',
-'Spend 2 hours on a manageable amount of unseen practice and answer explanations; do not judge readiness by memorized scores.',
-'Spend 1 hour rechecking local exam arrangements, identification, travel or equipment requirements.',
-'Keep 3–5 hours for rest, catch-up, and unexpected events. Extend the plan by 2–4 weeks if readiness evidence is insufficient.'
-],checkpoint:'Choose the exam date based on eligibility, training, local availability, and actual readiness. Twelve weeks is a study target, not a guarantee of passing or an official exam date.'}
+7:{title:"Agile delivery, hybrid projects and AI",focus:"Finish sections 10 and 11. This completes the knowledge content of the course.",tasks:[
+"Watch lectures 203–247, about 4.5 hours of video, and complete Quiz 8 and Quiz 9.",
+"Read this week's 3 notes and describe a team's status from a burndown chart.",
+"Spend 2 hours on practice questions for agile delivery, hybrid and AI.",
+"Spend 1.5 hours on mistakes from weeks 4 to 6."
+],checkpoint:"You can explain backlog ordering, the definition of done and WIP limits, and say who stays accountable when AI is used."},
+8:{title:"Finish the course, get the certificate, submit the application",focus:"Finish the content outline review and exam mindset sections and take the mock exam included in the course. At 100% course progress, claim the 35-hour certificate, then submit the PMI application.",tasks:[
+"Watch lectures 248–274, about 3 hours of video. Lectures 248–252 cover filling in the application, which you have already done, so skim them.",
+"Take the full-length mock exam included in the course: 180 questions, in an unbroken 4-hour block.",
+"When course progress reaches 100%, download the certificate, check the training details in your application against it, then submit.",
+"Read this week's 1 note and spend 1 hour sorting out the 3 kinds of question you missed most in the mock."
+],checkpoint:"The certificate is downloaded and the application is submitted. You can finish a mock exam within 4 hours."},
+9:{title:"First full review of the gaps",focus:"Understand every question you missed in the mock and shore up the weak areas by domain.",tasks:[
+"Spend 3 hours going through the mock question by question, noting the cause of each miss.",
+"Work the 50 case study questions from lecture 272 of the course.",
+"Spend 2 hours on focused practice in your weakest domain, then reread the matching notes.",
+"Spend 1.5 hours going over your notes on the exam mindset from lectures 258–270."
+],checkpoint:"You can name your 2 weakest topics and how you will close them."},
+10:{title:"Hard questions and consistency",focus:"Use harder questions to raise your ceiling while keeping up the daily spaced reviews.",tasks:[
+"Work the 200 ultra-hard questions from lecture 271 in 4 sittings of 50.",
+"After each sitting, spend 30 minutes reviewing. Record the cause, do not memorize the answer.",
+"Spend 2 hours on focused practice on this site, unseen questions first.",
+"Spend 1 hour writing out the earned value, three-point estimate and communication channel formulas from memory."
+],checkpoint:"Your accuracy on hard questions is steady and the misses cluster in a few topics."},
+11:{title:"Second full-length mock",focus:"Take another complete mock on questions you have not seen, with breaks as in the real exam.",tasks:[
+"Take an unseen full-length mock: 180 questions, 4 hours, with 2 breaks of 10 minutes each.",
+"Spend 3 hours reviewing it and compare with the first mock to see which gaps have closed.",
+"If your score is around 75% or higher, you can book the exam. This is a self-set target, not a PMI pass mark.",
+"Spend 1 hour on due reviews."
+],checkpoint:"You can finish 180 questions within 4 hours without your judgment slipping."},
+12:{title:"Buffer, wrap-up and exam preparation",focus:"Catch up on anything that slipped, go over the mindset principles and formulas, and confirm the exam arrangements.",tasks:[
+"Spend 3 hours catching up on any video, practice or review that slipped.",
+"Spend 2 hours rewatching the 50 mindset principles in lectures 258–270.",
+"Spend 2 hours clearing the questions in your mistake list that you have not yet answered correctly in a row.",
+"Confirm your ID, the test centre or online setup, and rest on the 1 day before the exam without learning anything new."
+],checkpoint:"The gaps are closed and the exam is booked, or you have decided to move the date back."}
 });
 Object.assign(window.PMP_EN.sources,{
 'https://www.pmi.org/certifications/project-management-pmp':{title:'PMI · PMP certification and eligibility',url:'https://www.pmi.org/certifications/project-management-pmp',note:'Check education, project experience, 35 hours of training, and current exam information.'},

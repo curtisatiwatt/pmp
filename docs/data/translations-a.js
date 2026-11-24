@@ -657,41 +657,41 @@ lesson('l12','Quality, completion standards, and continuous improvement','Build 
 'Reaffirm and follow a Definition of Done that includes testing, diagnose testing bottlenecks, and improve the workflow. Inflated completion counts must not conceal unfinished work and quality risks.');
 Object.assign(window.PMP_EN.lessons, lessons);
 Object.assign(window.PMP_EN.weeks, {
-1:{title:'Build your map and establish a starting point',focus:'Understand the updated exam, check eligibility and training arrangements, and establish a value-focused decision framework.',tasks:[
-'Spend 2 hours on this week’s 3 lessons and map the differences between predictive, agile, and hybrid approaches.',
-'Spend 1 hour checking eligibility and experience evidence, then schedule 3 hours of formal training.',
-'Complete 20 diagnostic questions and 10 mixed practice questions; spend 2 hours explaining every error.',
-'Spend 1 hour creating error tags and reserve another hour for revision or work conflicts.'
-],checkpoint:'Explain project value, the three life cycles, and your eligibility preparation. Treat the diagnostic score only as a starting point.'},
-2:{title:'Understand stakeholders and communication',focus:'Move from sending information to meaningful engagement and shared understanding.',tasks:[
-'Spend 2 hours on the 2 lessons and draw a stakeholder map for one of your own projects.',
-'Complete 4 hours of formal training. If training is already complete, use the time for assigned reference reading.',
-'Spend 2 hours on 30–40 People-domain situational questions and analyze the action sequence in each.',
-'Spend 1 hour reviewing week 1 errors and reserve up to 1 more hour for reflection or catching up.'
-],checkpoint:'Choose communication methods for different stakeholders and explain why sending reports alone does not resolve resistance.'},
-3:{title:'Lead teams and handle conflict',focus:'Practice servant leadership, authority boundaries, and collaborative problem-solving.',tasks:[
-'Spend 2 hours on the 2 lessons and write one empowerment scenario and one conflict scenario.',
-'Complete 4 hours of formal training. If already complete, check unfamiliar concepts and use reference reading.',
-'Spend 2 hours on 30–40 People questions, comparing when collaboration, negotiation, and escalation apply.',
-'Spend 1 hour retrying incorrect questions after a gap of at least 3 days; retain up to 1 hour of flexible time.'
-],checkpoint:'When facing conflict, describe facts, interests, and authority before considering punishment or unconditional escalation.'},
-4:{title:'Develop capability and define scope boundaries',focus:'Establish team agreements and turn vague requirements into verifiable deliverables.',tasks:[
-'Spend 2 hours on the 3 lessons and collect examples of working agreements and acceptance criteria.',
-'Complete 4 hours of formal training. If already complete, strengthen requirements and scope knowledge.',
-'Spend 2 hours on 40 mixed practice questions and check weak People-domain topics.',
-'Spend 1 hour summarizing error patterns from the first 4 weeks and reserve up to 1 hour to catch up. If behind, move the target date instead of removing review time.'
-],checkpoint:'Distinguish requirements, scope, quality inspection, and formal acceptance, and explain early concepts without notes.'},
-5:{title:'Master planning and delivery measures',focus:'Study the critical path, cost forecasts, and quality control.',tasks:[
-'Spend 2.5 hours on the 3 lessons and calculate CPI, SPI, and EAC under both assumptions by hand.',
-'Complete 4 hours of formal training. If already complete, use reference reading and draw a dependency network.',
-'Spend 2 hours on 40 Process questions. For calculations, state the measure’s meaning before substituting values.',
-'Spend 1 hour reviewing People-domain errors and retain 0.5 hours of flexible time.'
-],checkpoint:'Explain the business meaning of schedule and cost measures without treating SV as days of delay.'},
-6:{title:'Respond to risks and manage changes',focus:'Understand risk ownership, integrated impacts, and contractual boundaries.',tasks:[
-'Spend 2 hours on the 3 lessons and write one risk response and one change-control workflow.',
-'Complete 4 hours of formal training. If already complete, review how contract types allocate risk.',
-'Spend 2 hours on 40 risk, change, and procurement questions, explaining the problem with each unsuitable option.',
-'Spend 1 hour retrying week 5 errors and reserve up to 1 hour to close remaining gaps.'
-],checkpoint:'Distinguish risks from issues and choose an appropriate change path based on authority and life cycle.'}
+1:{title:"Foundations: the exam and core project concepts",focus:"Finish course sections 1 to 4: the exam format, the basic vocabulary of projects and value, and the PMBOK 8th edition principles.",tasks:[
+"Watch course sections 1 to 4 (lectures 1–47), about 4 hours of video, and complete Quiz 1 and Quiz 2.",
+"Take the 20-question diagnostic and spend 1 hour on the explanations. The score does not matter yet.",
+"Read this week's 4 notes and spend 1 hour adding new terms to your glossary.",
+"Keep 2 hours for practice questions on this week's sections, as you go."
+],checkpoint:"You can explain in your own words how projects, programs, portfolios and operations differ, and what delivering value means."},
+2:{title:"Approaches and performance domains, then into the processes",focus:"Finish sections 5 to 7 and the initiating processes in section 8, and tell apart when predictive, adaptive and hybrid approaches fit.",tasks:[
+"Watch sections 5 to 7 and lectures 77–85, about 4.5 hours of video, and complete Quiz 3, Quiz 4 and Quiz 5.",
+"Read this week's 3 notes and draw one diagram comparing the three development approaches.",
+"Spend 2 hours on practice questions for this week's sections and note the cause of each mistake the same day.",
+"Spend 1.5 hours on last week's mistakes and the spaced reviews that are due."
+],checkpoint:"You can say what each of the 7 performance domains covers and explain what the project charter and the stakeholder register are for."},
+3:{title:"Planning, part 1: integration, sourcing, scope, schedule and cost",focus:"One of the two heaviest weeks of the course. Cover the first half of the planning processes, with the WBS, the critical path and estimating as the focus.",tasks:[
+"Watch lectures 86–116, about 5.5 hours of video. Splitting it into 6 sittings works well.",
+"Read this week's 4 notes and work 2 critical path questions and 2 three-point estimate questions by hand.",
+"Spend 1.5 hours on practice questions for this week's sections.",
+"Spend 1 hour on due reviews. If the video runs over, carry it into next week rather than cutting review."
+],checkpoint:"You can work out the critical path and total float from a network diagram and explain how contract types share risk."},
+4:{title:"Planning, part 2, and executing",focus:"Finish planning for stakeholders, communications, resources and risk, then move into executing, with leading the team and quality as the focus.",tasks:[
+"Watch lectures 117–142, about 5 hours of video.",
+"Read this week's 4 notes and list when each of the 5 threat response strategies applies.",
+"Spend 2 hours on practice questions for this week's sections.",
+"Spend 1 hour on mistakes from the first 3 weeks."
+],checkpoint:"You can tell a risk from an issue and say what a project manager does first when a conflict appears."},
+5:{title:"Monitoring, controlling and closing, and earned value",focus:"Finish the processes section. Give lecture 151 on earned value and formulas an unbroken block of its own.",tasks:[
+"Watch lectures 143–156, about 4 hours of video, and complete Quiz 6.",
+"Write out the earned value formulas from memory, then work 10 calculation questions until you can do them without the sheet.",
+"Read this week's 1 note and spend 2 hours on practice questions for monitoring, controlling and closing.",
+"Take a 60-question checkpoint test in 80 minutes, then spend 1 hour reviewing it."
+],checkpoint:"Given PV, EV and AC you can state schedule and cost status at once, and you know the path a change request follows."},
+6:{title:"Agile mindset and leadership",focus:"Finish section 9. People is one third of the exam, and servant leadership and conflict handling are at its core.",tasks:[
+"Watch lectures 157–202, about 5 hours of video, and complete Quiz 7.",
+"Read this week's 4 notes and write out the Scrum roles, events and artifacts from memory.",
+"Spend 2 hours on practice questions for the People domain and agile.",
+"Spend 1 hour on due reviews."
+],checkpoint:"Faced with a team conflict or performance scenario, your first move is to talk and find the cause, not to escalate or punish."}
 });
 })();
