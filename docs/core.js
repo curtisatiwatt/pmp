@@ -58,6 +58,8 @@
     if(!x.review||typeof x.review!=='object'||Array.isArray(x.review))return false;
     if(!Object.entries(x.review).every(([id,r])=>ids.has(id)&&r&&Number.isInteger(r.streak)&&r.streak>=0&&r.streak<=5&&validDate(r.due)&&typeof r.everWrong==='boolean'&&typeof r.lastCorrect==='boolean'))return false;
     if(!x.history.every(h=>h&&typeof h.id==='string'&&/^[\w-]+$/.test(h.id)&&typeof h.label==='string'&&Array.isArray(h.ids)&&h.ids.length>0&&new Set(h.ids).size===h.ids.length&&h.ids.every(id=>ids.has(id))&&plain(h.answers)&&Object.entries(h.answers).every(([id,a])=>h.ids.includes(id)&&Number.isInteger(a)&&a>=0&&a<4)&&Number.isFinite(h.finishedAt)&&Number.isFinite(h.startedAt)&&typeof h.mode==='string'))return false;
+    // The course unit the learner has reached. Optional: backups made before that existed have none.
+    if(x.unit!==undefined&&!(typeof x.unit==='string'&&/^u\d{2}[a-z]?$/.test(x.unit)))return false;
     return x.checklist.every(v=>typeof v==='string');
   }
   const api={localDate,addDays,dayDiff,weeksFor,targetDate,shuffle,selectQuestions,stats,nextReview,scoreSession,validBackup,validSession};

@@ -13,6 +13,38 @@ const ui={
 '预测型':'Predictive','敏捷':'Agile','混合型':'Hybrid','基础':'Foundation','进阶题':'Intermediate','进阶练习':'Intermediate practice','正在练习':'Practice in progress','练习报告':'Practice report','还没有正在进行的练习':'No practice in progress','选择练习':'Choose a practice mode','返回练习中心':'Back to practice','每题提交后查看解析':'Explanations after each answer','交卷后统一查看解析':'Explanations after submission','收藏这道题':'Bookmark this question','取消收藏':'Remove bookmark','单选答案':'Select one answer','上一题':'Previous','下一题':'Next','提交答案':'Check answer','再看一眼决策思路':'Review the reasoning','✓ 判断正确':'✓ Correct reasoning','逐项理解：其他选项为什么不合适？':'Review each option: why are the others less suitable?','写一句复盘：我忽略了什么条件？为什么应该这样做？':'Write a reflection: what condition did I miss, and why is this action appropriate?','这道题的复盘笔记':'Reflection notes for this question','标记待检查':'Flag for review','已标记':'Flagged','交卷并查看报告':'Submit and view report','剩余时间':'Time remaining','答题进度':'Answer progress','绿色为已选择答案 · 小点为标记题':'Green means an answer is selected · A dot marks a flagged question','结束并交卷':'Finish and submit','计时持续运行，刷新或离开页面不会重置。到时自动交卷。':'The timer keeps running when you refresh or leave the page. Your answers are submitted automatically when time runs out.','先读情境与约束，再判断题目在问“首先”“接下来”还是“最佳”。':'Read the context and constraints, then check whether the question asks for the first, next or best action.','还没有练习报告':'No practice report yet','开始练习':'Start practice','每一次复盘，都让下一次更稳。':'Each review makes the next attempt stronger.','本次正确率':'This session’s accuracy','计时结束自动交卷':'Automatically submitted when time expired','已完成练习':'Practice completed','本次分数可能包含重复练习，首次正确率请看学习报告。':'This score may include repeated questions. See the progress report for first-attempt accuracy.','继续学习':'Continue learning','这是本站原创单选练习的结果，不是 PMP 官方成绩或通过预测。重点看原因，而不是记住选项字母。':'This is a result from original single-answer practice, not an official PMP score or pass prediction. Understand the reasoning rather than memorizing letters.','逐题复盘':'Question-by-question review','点击展开解析':'Expand for explanation','你的答案：未作答':'Your answer: unanswered','记录复盘笔记…':'Write a reflection…','已收藏':'Bookmarked','间隔复习':'Spaced review','情景复习':'Scenario review','人员领域练习':'People-domain practice','本次错题复习':'Review this session’s mistakes','这一组暂时没有题目，可以先做一次每日练习。':'There are no questions in this set yet. Try a daily practice first.','开始前，留出这段时间':'Before you start, reserve the time','本次为 180 道原创单选题，计时 240 分钟。':'This session has 180 original single-answer questions and a 240-minute limit.','本次为 60 道题，计时 80 分钟。':'This session has 60 questions and an 80-minute limit.','你已有一组未完成的练习。':'You already have an unfinished practice session.','时间到后自动交卷，离开页面仍继续计时。':'The timer continues if you leave the page, and submits automatically when it expires.','本组优先使用尚未练习的题目。':'This set prioritizes questions you have not attempted.','开始会替换未完成的练习；已经提交的单题学习记录保留。':'Starting replaces the unfinished session. Records for individually submitted answers are kept.','暂不开始':'Not now','时间到，已自动交卷并保存报告。':'Time is up. Your answers were submitted and your report saved.','结束本次练习？':'Finish this practice?','所有题目均已选择答案。':'You have selected an answer for every question.','交卷后可查看逐题解析。':'You can review each explanation after submitting.','继续作答':'Continue answering','确认交卷':'Confirm submission','关闭':'Close','记住这几个关键点':'Key takeaways','把知识放进场景':'Apply it to a scenario','想好后，展开参考思路':'Think first, then reveal the reasoning','我的理解':'My understanding','课程笔记':'Lesson notes','用自己的话写下要点，或记录仍不理解的地方…':'Write the key ideas in your own words, or note what is still unclear…','练习这个领域':'Practice this domain','取消完成标记':'Mark as incomplete','我学完了，标记完成':'Mark lesson complete','找一个知识点':'Find a topic','试试：风险、敏捷、相关方、AI…':'Try: risk, agile, stakeholders or AI…','搜索所有课程与题目':'Search all lessons and questions','输入关键词，搜索课程与题目。':'Enter a keyword to search lessons and questions.','没有找到。试试更短的关键词。':'No results. Try a shorter keyword.','课程':'Lesson','记录一段学习':'Log a study session','学习日期':'Study date','学习分钟数':'Minutes studied','学习内容':'Study activity','课程学习':'Lesson study','正式培训':'Qualifying training','练习与复盘':'Practice and review','模拟测试':'Practice exam','只记录尚未计入的时长，避免与专注计时重复。':'Log only time not already recorded by the focus timer.','保存学习记录':'Save study log','给自己一段专注时间':'Make time for focused learning','读一节课、分析几道题，或安静地整理笔记。':'Read a lesson, analyze a few questions or organize your notes.','25 分钟，从现在开始':'25 minutes, starting now','暂停':'Pause','开始 / 继续':'Start / resume','结束并记录':'Finish and log','关闭弹窗后计时继续。完成后自动记录 25 分钟。':'The timer continues when this dialog closes. Completing it automatically logs 25 minutes.','暂停不计时；中途结束按已专注的整分钟记录。':'Paused time is excluded. Ending early logs complete minutes of focused work.','还没有开始专注计时。':'The focus timer has not started.','不足 1 分钟，计时已结束。':'Less than one minute elapsed. The timer has stopped.','正在专注，慢慢来。':'Focus on one thing. Take your time.','已暂停，准备好再继续。':'Paused. Resume when you are ready.','备份文件过大，请选择本站导出的 JSON 文件。':'The backup is too large. Choose a JSON backup exported by this site.','无法读取文件。':'The file could not be read.','恢复这份学习备份？':'Restore this study backup?','取消':'Cancel','确认替换':'Confirm replacement','备份已恢复。':'Backup restored.','备份格式不正确或版本不兼容，当前数据未改变。':'The backup format or version is not supported. Your current data was not changed.','课程已完成。记得用自己的话复述一次。':'Lesson completed. Try explaining it once in your own words.','已取消完成标记。':'The lesson is now marked incomplete.','已加入收藏。':'Added to bookmarks.','已取消收藏。':'Bookmark removed.','已导出学习备份。':'Study backup exported.','浏览器存储无法读取。':'Browser storage could not be read.','清空学习记录？':'Clear your study records?','先导出备份':'Export backup first','确认清空':'Confirm reset','学习记录已清空。':'Study records cleared.','计划已更新，学习记录已保留。':'Plan updated. Your study records were kept.','学习内容未能完整载入':'Study content did not load completely','请检查网络并刷新页面。你的本地学习记录未被改动。':'Check your connection and refresh. Your local study records were not changed.','浏览器无法保存，请及时在设置中导出备份。':'Browser storage is unavailable. Export a backup from settings.','浏览器存储不可用。当前操作仅保留在本次页面中，请导出备份。':'Browser storage is unavailable. Changes only last for this page session; export a backup.','已有记录无法读取，已启动空白工作台。请先到设置下载原始存储，再恢复有效备份。':'Existing records could not be read. A blank workspace is shown. Download the raw storage in settings before restoring a valid backup.','备份仍可用于额外留档；日常跨设备学习无需反复导入导出。':'Backups remain useful for archiving. Everyday cross-device study no longer needs repeated imports or exports.','学习语言':'Study language','中文 / English / 中英对照':'Chinese / English / Bilingual','跳到主要内容':'Skip to main content','正在准备你的学习工作台…':'Preparing your study workspace…','请启用 JavaScript，以使用课程、练习和本地学习记录。':'Enable JavaScript to use lessons, practice and saved study records.','一':'Mon','二':'Tue','三':'Wed','四':'Thu','五':'Fri','六':'Sat','日':'Sun','未作答':'Unanswered',
 };
 Object.entries(ui).forEach(([z,e])=>add(z,e));
+// Interface text added with the 2026-11 redesign and the course-tracking page.
+const ui2={
+'今日':'Today','听课':'Course','提要':'Notes','复习':'Review','备考工具':'Toolkit','设置':'Settings','更多':'More',
+'快捷导航':'Quick navigation','搜索课程和题目':'Search notes and questions','更多页面':'More pages','计划进度':'Plan progress','题目和课程的显示语言':'Language for questions and notes',
+'原创学习内容，不是 PMI 官方产品。':'Original study material. Not a PMI product.','学习记录只保存在这台设备的浏览器里。':"Your study records stay in this device's browser.",
+'今天做什么':"Today's steps",'计划':'Plan','已听':'Watched','跟上计划':'On plan','还没到开始日期':'Not started yet','未开始':'Not started','课程已听完':'Course finished',
+'落下的已经超过一周的量。':'You are more than a week of video behind.','从今天重新排期':'Re-plan from today','计划已从今天重新排期，学习记录保留。':'The plan now starts today. Your study records are kept.',
+'听完了':'Mark watched','进度到 100% 后，在 Udemy 下载 35 小时证书。':'At 100% progress, download the 35-hour certificate on Udemy.','看听课记录':'Open course log',
+'本站提要':'Site note','提要都读完了':'All notes read','可以回到任何一节重读。':'Go back to any of them whenever you like.','看提要':'Open notes','打开':'Open','开始':'Start',
+'20 道题摸清三个领域的底子，约 30 分钟。':'20 questions to find your level in the three domains, about 30 minutes.','练刚听过的这一段':'Practice what you just watched',
+'每题提交后看解析，约 15 分钟。':'Check each answer as you go, about 15 minutes.','今天没有到期的题':'Nothing due for review today','做错的题会按 1、3、7、14、30 天的间隔再出现。':'Missed questions come back after 1, 3, 7, 14 and 30 days.',
+'已听课程':'Course watched','做过的题':'Questions attempted',
+'打开 Udemy 课程':'Open the course on Udemy','在 Udemy 听完一讲，回来勾掉。这里只是你自己的记录，35 小时证书以 Udemy 上的课程进度为准。':'Tick off each lecture after you watch it on Udemy. This is only your own record. The 35-hour certificate depends on your course progress on Udemy.',
+'整段标为已听':'Mark section watched','整段取消':'Unmark section','练这一段的题':'Practice this section','本节练习':'Section practice',
+'题号':'Questions','填色的是已选答案，带点的是标记待检查。':'Filled boxes are answered. A dot marks one flagged for review.',
+'显示':'Display','学习内容语言':'Study content language','英文':'English','英文 + 中文对照':'English with Chinese','中文':'Chinese',
+'题目和课程提要用哪种语言显示。练英文读题选英文，想对照理解选双语。页面顶部也能随时切换。':'The language used for questions and notes. Choose English to practise reading as on the exam, or bilingual to check your understanding. You can also switch at the top of any page.',
+'跟着课程走':'Follow the course','查漏补缺':'Close the gaps','模拟与考前':'Mocks and exam preparation',
+'章节练习':'Practice by section','章节':'Sections','语言':'Language',
+'English 是全部英文，中文是全部中文。选对照时，题目和提要显示英文加中文，界面用中文。页面顶部也能随时切换。':'English shows everything in English, and Chinese shows everything in Chinese. In the bilingual mode, questions and notes show English with Chinese, and the interface stays in Chinese. You can also switch at the top of any page.',
+'听课和进度在 Udemy 上管。这里按课程的顺序练题：听完哪一段，就练哪一段。':'Lectures and progress live on Udemy. Here you practise in course order: finish a section there, then practise it here.',
+'练这一段':'Practice this section','我听到这里':'You are here','听到这里了':'I have reached this',
+'坚持记录':'Study streak','天连续':'day streak','本周':'This week','天':'days',
+'今天已经练过了。':'You have practised today.','昨天空了一天。今天做 5 题就接上，别连着空两天。':'You missed yesterday. Five questions today puts you back on track. Do not miss two days running.','今天还没练。忙的话做 5 题也算数。':'No practice yet today. On a busy day, five questions still count.','只做 5 题':'Just 5 questions',
+'练你听到的这一段':'Practice the section you have reached','你听到':'You are at','改':'Change','本周计划':"This week's plan",'截止日':'Deadline','截止日（可选）':'Deadline (optional)',
+'一个不能错过的日期，比如 PMI 申请草稿的 90 天期限。它会显示在今日页。':'A date you cannot miss, such as the 90-day limit on a PMI application draft. It shows on the Today page.',
+'本周做题':'Questions this week','今日最低量':"Today's minimum",'固定一个时间':'Fix a time',
+'靠提醒比靠记性可靠。选一个工作日都能空出来的时间，加进手机日历，每天到点提醒你。':'A reminder is more reliable than memory. Pick a time you can keep free on workdays and add it to your phone calendar for a daily alert.',
+'提醒时间':'Reminder time','加进日历':'Add to calendar','PMP 练习':'PMP practice','日历文件已生成，打开它就能添加提醒。':'The calendar file is ready. Open it to add the reminder.',
+'界面语言':'Interface language','外观':'Appearance','跟随系统':'Match system','浅色':'Light','深色':'Dark','英文术语':'English term'
+};
+Object.entries(ui2).forEach(([z,e])=>add(z,e));
 function pair(source,target){
  if(typeof source==='string'&&typeof target==='string'){add(source,target);return}
  if(Array.isArray(source)&&Array.isArray(target)){source.forEach((v,i)=>pair(v,target[i]));return}
@@ -26,9 +58,23 @@ function loadContent(){
  (window.PMP_SOURCES||[]).forEach(s=>pair(s,en.sources?.[s.url]));
 }
 loadContent();
-let mode='bi';try{const saved=localStorage.getItem('pmp-language');if(['zh','en','bi'].includes(saved))mode=saved}catch{}
+// Two independent settings. `mode` is the language of study content (questions, lessons):
+// 'en' exam-style English, 'bi' English with the Chinese beneath, 'zh' Chinese only.
+// `uiLang` is the language of menus, buttons and messages. They used to be one switch,
+// which doubled every label on the page in bilingual mode.
+let mode='bi',uiLang='zh';
+try{const saved=localStorage.getItem('pmp-language');if(['zh','en','bi'].includes(saved))mode=saved;const savedUi=localStorage.getItem('pmp-ui');uiLang=['zh','en'].includes(savedUi)?savedUi:(saved==='en'?'en':'zh')}catch{}
 const hasHan=s=>/[\u3400-\u9fff]/.test(s);
 const rules=[
+ [/^共 (\d+) 周$/,m=>`of ${m[1]} weeks`],
+ [/^(\d+) \/ (\d+) 道做过$/,m=>`${m[1]} / ${m[2]} attempted`],
+ [/^首次正确率 (\d+)%$/,m=>`first-attempt accuracy ${m[1]}%`],
+ [/^比计划慢约 (\d+) 小时$/,m=>`About ${m[1]} h behind plan`],
+ [/^落后 ([\d.]+) 小时$/,m=>`${m[1]} h behind`],
+ [/^领先 ([\d.]+) 小时$/,m=>`${m[1]} h ahead`],
+ [/^还有 (\d+) 天$/,m=>`${m[1]} days left`],
+ [/^课程视频共 ([\d.]+) 小时$/,m=>`${m[1]} h of course video`],
+ [/^还有 (\d+) 道没做过$/,m=>`${m[1]} unseen questions`],
  [/^(.+)，向目标再近一步。$/,m=>`${m[1]}, one step closer to your goal.`],
  [/^(\d+) 周学习路线，每周 (\d+) 小时。$/,m=>`${m[1]} weeks of study, ${m[2]} hours each week.`],
  [/^(\d+) 节知识课 · 预测型、敏捷与混合方法 · 中英讲解与场景练习$/,m=>`${m[1]} lessons · Predictive, agile and hybrid approaches · Bilingual explanations and scenarios`],
@@ -107,21 +153,28 @@ function english(raw,depth=0){
  return str;
 }
 function text(zh,en){const e=en||english(zh);return mode==='zh'?zh:mode==='en'?e:e!==zh?`${zh}\n${e}`:zh}
+// Interface strings follow the UI language only.
+function t(zh){return uiLang==='en'?english(zh):zh}
+const zoneOf=el=>{for(let n=el;n;n=n.parentElement){const z=n.getAttribute?.('data-zone');if(z)return z}return 'ui'};
 function apply(root=document.body){
  if(!root)return;
  root.normalize();
  const all=[...(root.matches?.('[aria-label],[placeholder],[title]')?[root]:[]),...root.querySelectorAll('[aria-label],[placeholder],[title]')];
- for(const el of all){if(el.closest('[data-i18n-skip]'))continue;for(const attr of ['aria-label','placeholder','title'])if(el.hasAttribute(attr)){const z=el.getAttribute(attr),e=english(z);if(e!==z)el.setAttribute(attr,mode==='zh'?z:mode==='en'?e:`${z} / ${e}`)}}
- if(mode==='zh')return;
+ if(uiLang==='en')for(const el of all){if(el.closest('[data-i18n-skip]'))continue;for(const attr of ['aria-label','placeholder','title'])if(el.hasAttribute(attr)){const z=el.getAttribute(attr),e=english(z);if(e!==z)el.setAttribute(attr,e)}}
+ if(uiLang==='zh'&&mode==='zh')return;
  const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);const nodes=[];while(walker.nextNode())nodes.push(walker.currentNode);
- for(const node of nodes){const p=node.parentElement;if(!p||p.closest('script,style,textarea,input,[data-i18n-skip],.i18n-pair,.i18n-en'))continue;const raw=node.nodeValue,z=raw.trim();if(!hasHan(z))continue;const e=english(z);if(!e||e===z)continue;
-   if(mode==='en'||p.closest('option,title')){node.nodeValue=raw.replace(z,mode==='bi'&&p.closest('option')?`${z} / ${e}`:e);continue}
-   const pair=document.createElement('span');pair.className='i18n-pair';const zh=document.createElement('span');zh.className='i18n-zh';zh.lang='zh-CN';zh.textContent=z;const en=document.createElement('span');en.className='i18n-en';en.lang='en';en.textContent=e;pair.append(zh,en);node.replaceWith(pair);
+ for(const node of nodes){const p=node.parentElement;if(!p||p.closest('script,style,textarea,input,[data-i18n-skip],.i18n-pair,.i18n-en'))continue;const raw=node.nodeValue,z=raw.trim();if(!hasHan(z))continue;
+   const want=zoneOf(p)==='content'?mode:uiLang;if(want==='zh')continue;
+   const e=english(z);if(!e||e===z)continue;
+   if(want==='en'||p.closest('option,title')){node.nodeValue=raw.replace(z,e);continue}
+   // Study content in bilingual mode: English first, as on the exam, Chinese beneath as a gloss.
+   const pair=document.createElement('span');pair.className='i18n-pair';const en=document.createElement('span');en.className='i18n-en';en.lang='en';en.textContent=e;const zh=document.createElement('span');zh.className='i18n-zh';zh.lang='zh-CN';zh.textContent=z;pair.append(en,zh);node.replaceWith(pair);
  }
 }
-function setMode(value){if(!['zh','en','bi'].includes(value))return;mode=value;try{localStorage.setItem('pmp-language',value)}catch{}document.documentElement.lang=mode==='en'?'en':'zh-CN';document.documentElement.dataset.language=mode;document.title=mode==='en'?'Ascend PMP · Your study workspace':mode==='bi'?'进阶 PMP · Ascend PMP':'进阶 PMP · 你的备考工作台';window.dispatchEvent(new Event('pmp-language-change'))}
+function reflect(){const d=document.documentElement;d.lang=uiLang==='en'?'en':'zh-CN';d.dataset.language=mode;d.dataset.ui=uiLang;document.title=uiLang==='en'?'Ascend PMP · Your study workspace':'进阶 PMP · 你的备考工作台'}
+function setMode(value){if(!['zh','en','bi'].includes(value))return;mode=value;try{localStorage.setItem('pmp-language',value)}catch{}reflect();window.dispatchEvent(new Event('pmp-language-change'))}
+function setUi(value){if(!['zh','en'].includes(value))return;uiLang=value;try{localStorage.setItem('pmp-ui',value)}catch{}reflect();window.dispatchEvent(new Event('pmp-language-change'))}
 const searchText=(type,id,source)=>`${JSON.stringify(source)} ${JSON.stringify(window.PMP_EN?.[type]?.[id]||{})}`.toLowerCase();
-window.PMPI18n={get mode(){return mode},getMode:()=>mode,setMode,text,english,apply,loadContent,searchText};
-document.documentElement.lang=mode==='en'?'en':'zh-CN';document.documentElement.dataset.language=mode;
-document.title=mode==='en'?'Ascend PMP · Your study workspace':mode==='bi'?'进阶 PMP · Ascend PMP':'进阶 PMP · 你的备考工作台';
+window.PMPI18n={get mode(){return mode},get ui(){return uiLang},getMode:()=>mode,setMode,setUi,text,t,english,apply,loadContent,searchText};
+reflect();
 })();

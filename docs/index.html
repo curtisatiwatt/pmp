@@ -1,23 +1,25 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="auto">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#185e4b">
-  <meta name="description" content="中英双语 PMP 学习工作台。12 周学习路径、24 节知识课、200 道原创情景题与解析，支持中文、English、中英对照及本地进度保存。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f5f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f141b" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="个人 PMP 备考工作台：配合 35 小时课程的学习计划、24 节提要、原创情景题与解析。英文为主，中文对照，学习记录只保存在本机浏览器。">
   <title>进阶 PMP · 你的备考工作台</title>
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./readability.css?v=20261113-1">
-  <link rel="stylesheet" href="./mobile.css?v=20261114-1">
-  <script defer src="./data/curriculum.js"></script>
-  <script defer src="./data/questions-a.js"></script>
-  <script defer src="./data/questions-b.js"></script>
-  <script defer src="./data/translations-a.js"></script>
-  <script defer src="./data/translations-b.js"></script>
-  <script defer src="./core.js"></script>
-  <script defer src="./i18n.js"></script>
-  <script defer src="./app.js"></script>
+  <!-- Apply the saved appearance before first paint so the page never flashes the wrong theme. -->
+  <script>try{var t=localStorage.getItem('pmp-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}</script>
+  <link rel="stylesheet" href="./app.css?v=20261124-1">
+  <script defer src="./data/curriculum.js?v=20261124-1"></script>
+  <script defer src="./data/questions-a.js?v=20261124-1"></script>
+  <script defer src="./data/questions-b.js?v=20261124-1"></script>
+  <script defer src="./data/translations-a.js?v=20261124-1"></script>
+  <script defer src="./data/translations-b.js?v=20261124-1"></script>
+  <script defer src="./data/course.js?v=20261124-1"></script>
+  <script defer src="./core.js?v=20261124-1"></script>
+  <script defer src="./i18n.js?v=20261124-1"></script>
+  <script defer src="./app.js?v=20261124-1"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
